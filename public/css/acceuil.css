@@ -4,8 +4,8 @@ html {
   padding: 0;
   font-family: 'Poppins', sans-serif; /* Police plus moderne */
   line-height: 1.6;
-  background-image: url('../img/background2.jpg');
-  background-size: cover;
+  background-image: url('../img/background3.jpg');
+  background-size: fit-content;
 
 }
 
@@ -43,20 +43,20 @@ nav ul {
 
 nav ul.show {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   position: absolute;
   top: 110%;
-  left: 58%;
-  width: 40%;
-  line-height: 0.8;
+  left: 3%;
+  width: 95%;
   background-color: #df94e33f;
   box-shadow: 0 2px 4px rgba(141, 80, 173, 0.695);
   text-shadow: 0 2px 4px rgba(141, 80, 173, 0.695);
-  border-radius: 10%;
+  border-radius: 30px;
 }
 
 nav ul li {
   margin: 1rem;
+  line-height: 0.8rem;
 }
 
 nav ul.show:hover {
@@ -105,15 +105,34 @@ section:hover {
 
 h1,
 h2 {
-  color: #4e2c66; /* Mauve doux pour les titres */
-  margin-bottom: 3rem;
+  background-color: #d6a7e3d7;
+  border-radius: 40px;
+  color: #542d73; 
+  text-shadow: 0 6px 8px rgba(231, 155, 249, 0.279);
   font-size: 2rem;
-  align-items: center;
-  position: relative; /* Enlève le positionnement absolu */
-  text-decoration: none; /* Enlève le soulignement */
+  margin: 0 auto;
+  padding: 1.3rem;
   text-align: center;
+  position: relative;
+  width: fit-content;
+  box-shadow: 0 6px 8px rgba(231, 155, 249, 0.279);
 }
-
+h1:hover,
+h2:hover {
+  animation: big 0.3s ease-in-out;
+}
+@keyframes big {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+  
+} 
 /* Carousel Styles */
 .carousel {
   position: relative;
@@ -173,7 +192,7 @@ h2 {
 #presentation,
 #coworking,
 #contact {
-  background-color: #90b7cace;
+  background-color: #c6b9d0ce;
   padding: 2rem;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -187,10 +206,110 @@ h2 {
   transform: translateY(-5px);
   box-shadow: 0 6px 8px rgba(110, 24, 152, 0.15);
 }
+#contact-infos{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 3rem; 
+  padding-top: 30px;
+}
 
+iframe {
+  width: 50%;
+  height: 80vh;
+}
+
+#contact-details{
+  background-color: #8964a4cb;
+  border-radius: 30px;
+  border: #4e2c66 1px solid;
+  width: 50%;
+  padding: 2%;
+  animation: pulse 5s infinite ease-in-out;
+  flex-direction: row;
+  justify-content: center;
+
+}
+
+.contactForm {
+  margin-top: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.name {
+  gap:1rem;
+}
+.subject input {
+  height: 30vh;
+} 
+.name, .email, .subject {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+.contact-molengeek{
+  background-color: #e2c9f379;
+  border: #8964a4 1 solid;
+  box-shadow:rgba(217, 202, 228, 0.789);
+  border-radius: 5px;
+  line-height: 0.9rem;
+  padding: 2px;
+  color: white;
+}
+
+.name input, .email input, .subject input{
+  width: 100%; 
+  padding: 12px 15px;
+  font-size: 1rem;
+  color: #333;
+  background-color: #f8f2ff;
+  border: 2px solid #e2c9f3;
+  border-radius: 10px;
+}
+
+button {
+  background-color: #4e2c66;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-weight: 600;
+  letter-spacing: 0.3rem;
+}
+
+button:hover {
+  background-color: #a588bace;
+}
+.name input:hover, .email input:hover, .subject input:hover {
+  background-color: #f0e6fa;
+}
+
+
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.9);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0.9);
+  }
+  
+}
+
+#contact-details:hover {
+  background-color: #633983eb;
+  animation: none;
+
+}
 /* Footer Styles */
 footer {
-  background-color: #516591ce  ;
+  background-color: #d298f3ce  ;
   color: #fff;
   text-align: center;
   padding: 1rem;
@@ -217,6 +336,34 @@ footer {
   .burger {
     display: none;
   }
+}
+@media (min-width: 320px) and (max-width: 767px){
+  #contact-infos{
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.8rem;
+    
+
+  }
+  #contact-details{
+    width: 100%;
+    margin-bottom: 0;
+    animation: none;
+    padding:  5%;
+   
+    justify-items: center;
+  }
+  #contact-details:hover {
+    background-color: #633983eb;
+  }
+  .contactForm input{
+    font-size: 0.8rem;
+    
+  }
+  iframe {
+    width: 100%;
+  }
+
 }
 
 /* Animation for sections */
