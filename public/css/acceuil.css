@@ -187,6 +187,12 @@ h2 {
   box-shadow: 0 6px 8px rgba(110, 24, 152, 0.15);
 }
 
+#contact {
+  display: flex;
+  flex-direction: column;
+  al
+}
+
 /* Footer Styles */
 footer {
   background-color: #6a0dad;
