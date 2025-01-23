@@ -91,6 +91,93 @@ nav ul li a:hover {
   transition: all 0.3s ease;
 }
 
+#formations-molengeek,
+#temoignages {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin-top: 100px;
+  padding: 2rem;
+
+
+}
+#formations-molengeek{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 50px;
+  gap: 2rem;
+  width: 90%;
+ 
+}
+
+
+.youtube-video {
+  width: 60%;
+  height: 355px;
+  margin-bottom: 50px;
+}
+.formation-coding,
+.formation-marketing,
+.formations-courtes {
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 50px;
+
+}
+
+.formation-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%; /* Élargit chaque élément à la largeur complète de son conteneur */
+  margin-bottom: 20px; /* Ajoute un espacement entre chaque formation */
+  padding: 15px; /* Ajoute un peu d'espace interne pour une meilleure lisibilité */
+  border: 1px solid #df94e3; /* Bordure pour séparer visuellement les items */
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #f9f6fc;
+}
+
+.formation-header {
+  display: flex;
+  justify-content: space-between; /* Espace entre le texte et le bouton */
+  align-items: center;
+  width: 100%; /* La ligne prend toute la largeur */
+  margin-bottom: 10px; /* Espacement entre l'en-tête et les détails */
+}
+
+.formation-header span {
+  font-size: 1.2rem; /* Taille du texte pour plus de lisibilité */
+  font-weight: bold;
+  color: #6a0dad;
+}
+
+.formation-header .toggle-details {
+  font-size: 1.2rem; /* Augmente la taille du bouton */
+  padding: 5px 15px; /* Espacement interne pour agrandir le bouton */
+  border: none;
+  background-color: #df94e3;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.formation-header .toggle-details:hover {
+  background-color: #9b30ff; /* Couleur plus intense au survol */
+  transform: scale(1.1); /* Légère augmentation de la taille au survol */
+}
+
+.formation-details {
+  padding: 10px 0;
+  line-height: 1.6;
+  font-size: 1rem;
+  color: #333; /* Couleur du texte */
+}
 
 .formation-details {
   display: none;
@@ -100,6 +187,40 @@ nav ul li a:hover {
   display: block;
 }
 
+#temoignages{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  margin-top: 100px;
+  padding: 15rem;
+  padding-top:2rem;
+  padding-bottom:2rem;
+  gap: 2rem;
+}
+#temoignages img {
+  max-width: 100%; /* Évite que les images dépassent leur conteneur */
+  height: auto;
+  border-radius: 50px;
+  margin-bottom: 20px;
+}
+
+#temoignages p {
+  width: auto; /* Adapte la largeur des paragraphes à leur contenu */
+  text-align: center; /* Centre le texte à l'intérieur du paragraphe */
+}
+
+.coding-temoignages,
+.marketing-temoignages,
+.formation-temoignages {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; /* Centre le contenu horizontalement */
+  align-items: center; /* Centre le contenu verticalement */
+  gap: 1rem; /* Ajoute un espace entre les éléments, si nécessaire */
+  width: 100%; /* Assure que le conteneur utilise toute la largeur */
+}
 
 /* Styles */
 footer {
