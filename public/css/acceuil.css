@@ -4,26 +4,27 @@ html {
   padding: 0;
   font-family: 'Poppins', sans-serif; 
   line-height: 1.6;
-  background-image: url('../img/White.jpg');
+ background-image: url('../img/White.jpg');   /* background du site */
   background-size: fit-content;
 }
 .michroma-regular {
   font-family: "Michroma", serif;
   font-weight: 400;
   font-style: normal;
-}
+} /* Police téléchargée pour le site */
 
-/* Header Styles */
+
 header {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   position: relative;
-  z-index: 1;
+  z-index: 1;  /* la position z-index 1 et relative permet à la nav de rester en haut */
   top: 0;
 }
 
 nav {
   display: flex;
   justify-content: space-between;
+  /* permet aux éléments d'être espacés entre eux*/
   align-items: center;
 
 }
@@ -35,7 +36,7 @@ nav p {
 
 nav p:hover {
   transform: scale(1.1);
-}
+} /* transition en passant sur le "logo" molengeek qui s'agrandit */
 
 nav ul {
   display: none;
@@ -48,7 +49,8 @@ nav ul {
 nav ul.show {
   display: flex;
   flex-direction: row;
-  position: absolute;
+  position: absolute;  /* quand à l'aide de la fonction js on appuye sur la classlist show sa position est 
+  absolue sinon elle est en display none*/
   justify-content: space-around;
   left: 3%;
   width: 95%;
@@ -80,11 +82,11 @@ nav ul li a:hover {
 }
 
 .burger {
-  display: block;
+  display: block; /* s'assure qu'il ne bouge pas*/
   cursor: pointer;
 }
 
-.burger div {
+.burger div { /*création du menu burger*/
   width: 25px;
   height: 3px;
   background-color: #542d73; 
@@ -93,7 +95,7 @@ nav ul li a:hover {
   transition: all 0.3s ease;
 }
 
-.burger:hover{
+.burger:hover{ /* animation pour faire tourner le burger sur lui même*/
   animation: rotate 0.5s ease;
 }
 @keyframes rotate {
@@ -105,14 +107,11 @@ nav ul li a:hover {
   }
 }
 
-/* Main Content Styles */
-main {
-  padding: 2rem;
-}
+
 
 section {
   margin-bottom: 4rem;
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease; /* chaque section se souléve vers le haut légérement quand on passe dessus*/
 }
 
 section:hover {
@@ -126,18 +125,17 @@ h2 {
   font-family: 'Orbitron';
   color: #542d73; 
   text-shadow: 0 6px 8px rgba(231, 155, 249, 0.279);
-  font-size: 1.5rem;
+  font-size: 1rem;
   margin: 0 auto;
   padding: 1.3rem;
   text-align: center;
-  position: relative;
-  width: fit-content;
+  width: fit-content; /* permet dans les cas d'un background color de ne pas s'étendre sur toute la largeur et d'uniquement s'adapter au contenu*/
   box-shadow: 0 6px 8px rgba(231, 155, 249, 0.279);
 }
 h1:hover,
 h2:hover,
-nav ul li:hover {
-  animation: big 0.4s ease-in-out;
+nav ul li:hover {  /* quand on passe sur les titres ils s'agrandissent*/
+animation: big 0.4s ease-in-out;
 }
 @keyframes big {
   0% {
@@ -151,22 +149,19 @@ nav ul li:hover {
   }
   
 } 
-/* Carousel Styles */
+/*css carousel*/
 .carousel {
-  position: relative;
+  position: relative; /*position pour permettre à la fonction js de s'activer*/
   width: 100%;
   height: 600px;
   overflow: hidden;
-
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  margin-top: 10px; 
+  margin-top: 50px; 
 }
 
 
 .carousel img {
-  position: absolute;
-  top: 0;
-  left: 0;
+  position: absolute; /*position pour permettre à la fonction js de s'activer*/
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -179,12 +174,12 @@ nav ul li:hover {
 }
 
 
-/* Carousel Navigation Styles */
-.carousel-nav {
+
+.carousel-nav { /* boutons du carousel*/
   position: absolute;
-  top: 50%;
+  top: 50%; /*met les éléments au milieu de la class*/
   transform: translateY(-50%);
-  background-color: rgba(126, 41, 187, 0.7); /* Couleur mauve foncé */
+  background-color: rgba(126, 41, 187, 0.7); /*met les éléments au centre de la class*/
   color: white;
   padding: 10px 15px;
   border: none;
@@ -195,7 +190,7 @@ nav ul li:hover {
 }
 
 .carousel-nav:hover {
-  background-color: rgba(106, 13, 173, 1); /* Mauve plein */
+  background-color: rgba(106, 13, 173, 1); 
 }
 
 .carousel-nav.prev {
@@ -205,7 +200,7 @@ nav ul li:hover {
 .carousel-nav.next {
   right: 10px;
 }
-.middle{
+.middle{ /*classe crée pour pouvoir mettre cowork et presentation cote a cote*/
   display: flex;
   flex-direction: row;
   gap: 3rem;
@@ -213,7 +208,7 @@ nav ul li:hover {
   
 }
 
-/* Other Sections */
+
 #contact {
   background-color: #bb7ee745;
   padding: 5rem;
@@ -222,12 +217,13 @@ nav ul li:hover {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
 #coworking,
 #presentation {
   background-color: #bb7ee745;
   padding: 5rem;
   border-radius: 50%;
-  margin: 10px;
+  margin: 30px;
   backdrop-filter: blur(5px) saturate(90%);
   box-shadow: 0 2px 4px rgba(216, 57, 57, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -250,6 +246,7 @@ nav ul li:hover {
   transform: translateY(-5px);
   box-shadow: 0 6px 8px rgba(110, 24, 152, 0.15);
 }
+
 #contact-infos{
   display: flex;
   flex-direction: row;
@@ -264,6 +261,7 @@ iframe {
 }
 
 
+/*css section contact */
 #contact-details{
   background-color: #8964a4cb;
   border-radius: 30px;
@@ -295,7 +293,7 @@ iframe {
   width: 100%;
   margin-bottom: 1rem;
 }
-.contact-molengeek{
+.contact-molengeek{ 
   background-color: #e2c9f379;
   border: #8964a4 1 solid;
   box-shadow:rgba(217, 202, 228, 0.789);
@@ -342,7 +340,7 @@ button:hover {
   background-color: #f0e6fa;
 }
 
-
+/*animation form*/
 
 @keyframes pulse {
   0% {
@@ -359,10 +357,51 @@ button:hover {
 
 #contact-details:hover {
   background-color: #633983eb;
-  animation: none;
+  animation: none; /* enlève l'animation pour écrire*/
 
 }
-/* Footer Styles */
+
+/*css banners*/
+#partners-banner {
+  background: linear-gradient(135deg, #e2c8f7, #c9a3f5);
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  margin: 20px auto;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#partners-banner h3 {
+  font-family: 'Orbitron', cursive;
+  color: #6a1b9a;
+  font-size: 2rem;
+  margin-bottom: 15px;
+  background-color: none;
+}
+
+.partners-logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.partners-logos img {
+  width: 100px;
+  height: auto;
+  border-radius: 10px;
+  padding: 10px;
+  transition: transform 0.4s, opacity 0.3s;
+}
+
+.partners-logos img:hover {
+  transform: scale(1.2);
+  opacity: 0.8;
+} /* agrandit le png quand on passe dessus*/
+
+
+/* Footer css */
+
 footer {
   background-color: #d298f3ce  ;
   color: #fff;
@@ -371,14 +410,15 @@ footer {
   font-size: 1rem;
 }
 
-/* Responsive Design */
+/* media queries */
+
 @media (min-width: 768px) {
   nav ul {
-    display: flex;
+    display: flex; /*pour pouvoir changer le display de la nav quand on déroule le menu burger*/
   }
 
   nav ul.show {
-    position: static;
+    position: static; /*pour que la nav bar ne descende pas quand on scrolle vers le bas*/
     flex-direction: row;
     background-color: transparent;
     box-shadow: none;
@@ -388,42 +428,32 @@ footer {
     margin: 0 1rem;
   }
 
-  .burger {
-    display: none;
-  }
+ 
 }
 @media (min-width: 320px) and (max-width: 834px){
-  #contact-infos{
-    flex-direction: column;
-    align-items: center;
-    font-size: 0.8rem;
-    
 
-  }
+  
   .middle{
     display: flex;
     flex-direction: column;
     gap: 1rem;
-  }
-
+  } 
+ 
 }
-    @media (min-width: 320px) and (max-width: 835px) {
+    @media (min-width: 320px) and (max-width: 834px) {
       #coworking,
       #presentation {
-        background-color: #bb7ee745;
         padding: 2rem; 
         border-radius: 20px;  
         margin: 10px;
         height: auto;  
         margin-bottom: 20px;
-        backdrop-filter: blur(5px) saturate(90%);
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        
       }
     
       #coworking p,
       #presentation p {
-        color: #542d73; 
-        font-size: 0.9rem;  /* Légère augmentation */
+        font-size: 0.9rem; 
         text-align: center;
         line-height: 1.4;
       }
@@ -432,69 +462,126 @@ footer {
       #presentation h1,
       #coworking h2,
       #presentation h2 {
-        font-size: 1rem;  /* Taille plus lisible */
+        font-size: 1rem; 
         text-align: center;
-        padding: 0.8rem;  /* Padding réduit */
+        padding: 0.8rem;  
       }
-    
-    
 
-  #contact-details{
-    width: 100%;
-    margin-bottom: 0;
-    animation: none;
-    padding:  3%;
-   
-    justify-items: center;
-  }
-  #contact-details:hover {
-    background-color: #633983eb;
-  }
-  .contactForm input{
-    font-size: 0.8rem;
-   
+}
+
+@media (max-width: 834px) {
+  /* Section Contact */
+  #contact-infos {
+    flex-direction: column; /*changement en colonne*/
+    gap: 2rem;
+    padding-top: 20px;
   }
 
   iframe {
     width: 100%;
+    height: 50vh;
   }
 
+    #contact h2 {
+      width: 100%;
+      text-align: center;
+      margin: 0 auto 20px;
+      padding: 10px;
+      font-size: 1.2rem;
+    }
+  
+
+  #contact-details {
+    width: 100%;
+    padding: 5%;
+    border-radius: 20px;
+  }
+  
+  #contact-title{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   vertical-align: middle;
+  }
+
+  .contactForm {
+    margin-top: 10%;
+  }
+
+  .name, .email, .subject {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 90%;
+    gap: 1rem;
+  }
+
+  .name input, .email input, .subject input {
+    font-size: 0.9rem;
+    padding: 10px 12px;
+  }
+
+  button {
+    font-size: 0.9rem;
+    letter-spacing: 0.2rem;
+    padding: 8px 15px;
+  }
+
+  .contact-molengeek {
+    border-radius: 20px;
+    line-height: 1rem;
+    padding: 10px;
+  }
+
+  .contact-molengeek p {
+    font-size: 0.9rem;
+  }
+
+  /* Section Partenaires */
+  #partners-banner {
+    padding: 15px;
+  }
+
+  #partners-banner h3 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .partners-logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .partners-logos img {
+    max-width: 100px;
+    max-height: 60px;
+    object-fit: contain;
+  }
 }
-@media (min-width: 320px) and (max-width: 834px) {
-  #partner-banner {
-      padding: 15px;
-  }
 
-  #partner-banner h2 {
-      font-size: 1.5rem;
-  }
-
-  #partner-banner .partners {
-      flex-direction: column;
-      align-items: center;
-      gap: 15px;
-  }
-
-  #partner-banner .partners img {
-      max-width: 100px;
-      max-height: 60px;
-  }
+.carousel{
+  margin-top: 80px;
+}
+#partners-banner {
+  text-align: center;
+  padding: 30px;
 }
 
-
-/* Animation for sections */
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+.partners-logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; /*contient les logos dans la page*/
+  gap: 30px;
 }
 
-section {
-  animation: fadeInUp 0.5s ease-out;
+.partners-logos img {
+  max-height: 80px;
+  max-width: 150px;
+  object-fit: contain;
 }
+
 

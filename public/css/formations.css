@@ -122,8 +122,20 @@ nav ul li a:hover {
   border: #8964a48a 5px solid;
   border-radius: 50px;
   margin-top: 30px;
-
+  transform: shake 0.1s infinite ease-in-out;
 }
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); } /* on fait bouger la videode gauche a droite sur l'axe horizontal*/
+  20% { transform: translateX(-10px); }
+  40% { transform: translateX(10px); }
+  60% { transform: translateX(-10px); }
+  80% { transform: translateX(10px); }
+}
+.youtube-video:hover {
+  animation: shake 0.5s ease;
+}
+
 .formation-coding,
 .formation-marketing,
 .formations-courtes {
@@ -140,7 +152,16 @@ nav ul li a:hover {
   padding: 3rem;
   backdrop-filter: blur(10px) saturate(150%);
   border-radius: 30px;
+  transition: transform 0.3s ease; 
 
+
+}
+
+
+.formation-coding:hover,
+.formation-marketing:hover,
+.formations-courtes:hover {
+  transform: translateY(-5px);
 }
 .formation-coding p,
 .formation-marketing p{
@@ -230,9 +251,9 @@ width: 50%;
   padding: 5rem;
   padding-top:2rem;
   padding-bottom:2rem;
-  gap: 2rem;
-
+  
 }
+
 #temoignages img {
   max-width: 100%; /* Évite que les images dépassent leur conteneur */
   height: auto;
@@ -243,6 +264,7 @@ width: 50%;
 #temoignages p {
   width: auto; /* Adapte la largeur des paragraphes à leur contenu */
   text-align: center; 
+
 }
 
 .coding-temoignages,
@@ -259,7 +281,16 @@ width: 50%;
   background-color: #bb7ee745;
   padding: 3rem;
   backdrop-filter: blur(10px) saturate(150%);
+  transition: 0.4s ease-in-out;
 }
+
+.coding-temoignages:hover,
+.marketing-temoignages:hover,
+.formation-temoignages:hover {
+
+  transform: scale(1.1);
+}
+
 #formations-molengeek h1,
 #formations-molengeek h2,
 #temoignages h1,
@@ -311,21 +342,57 @@ footer {
       flex-direction: column; 
       gap: 1rem; 
       text-align: center; 
-    }
-    .formation-coding,
-.formation-marketing,
-.formations-courtes {
-  display: flex; /* Garde la disposition flexible */
-  flex-direction: column; /* Change la disposition pour être verticale */
-  text-align: center; /* Centre le texte dans les éléments enfants */
-  gap: 1rem; /* Ajoute de l'espacement entre les éléments */
-  margin-bottom: 30px; /* Ajoute de l'espace en bas de chaque section */
+    }}
+
+    @media (max-width: 824px) {
+      #formations-molengeek {
+        width: 95%;
+        margin: 50px auto;
+        padding: 10px;
+      }
+    
+      .youtube-video {
+        width: 100%;
+        height: 200px;
+        margin: 20px 0;
+      } 
+    
+      .formation-coding,
+      .formation-marketing,
+      .formations-courtes {
+        flex-direction: column; /* changement de flex*/
+        padding: 1.5rem;
+        gap: 1rem;
+        margin-bottom: 20px;
+      }
+    
+      .formation-coding p,
+      .formation-marketing p {
+        width: 100%;
+        text-align: center;
+      }
+    
+      .formation-item {
+        width: 100%;
+        margin-bottom: 15px;
+        padding: 10px;
+      }
+    
+      .formation-header span {
+        font-size: 1rem;
+      }
+    
+      .formation-header .toggle-details {
+        font-size: 1rem;
+        padding: 3px 10px;
+      }
+    
+      .formations-liste {
+        width: 95%;
+        padding: 1.5rem;
+      }
+    
  
-  
-}
-.youtube-video{
-  margin-top: 5px;
-}
 
   
     .img-temoignage img {
@@ -344,7 +411,7 @@ footer {
     #temoignages p {
       font-size: 0.9rem;
     }
-  }
+  }}
     
   
   
