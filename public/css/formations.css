@@ -317,8 +317,11 @@ footer {
   text-align: center; /* Centre le texte dans les éléments enfants */
   gap: 1rem; /* Ajoute de l'espacement entre les éléments */
   margin-bottom: 30px; /* Ajoute de l'espace en bas de chaque section */
-  padding: 0;
+ 
   
+}
+.youtube-video{
+  margin-top: 5px;
 }
 
   
