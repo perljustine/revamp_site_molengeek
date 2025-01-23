@@ -1,16 +1,8 @@
-body, html {
+body,html {
   margin: 0;
   padding: 0;
   font-family: 'Poppins', sans-serif;
   line-height: 1.6;
-}
-
-#page-job{
-  background-image: url('../img/FAQ.jpg');
-  background-size: cover; 
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
 }
 
 /* Header Styles */
@@ -91,7 +83,84 @@ nav ul li a:hover {
   margin: 5px;
   transition: all 0.3s ease;
 }
-/* Footer Styles */
+
+#faq {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+ h2 {
+  text-align: center;
+  font-family: 'Orbitron', sans-serif;
+  color: #8f40ab;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  margin-top: 3rem;
+}
+
+.faq-liste {
+  list-style: none;
+  /* padding: 1rem; */
+}
+
+.faq-item {
+  border-bottom: 1px solid #ddd;
+  padding: 1rem;
+  transition: background-color 0.3s ease-in-out;
+}
+
+
+
+.faq-item:hover {
+  background-color: #efe8f7;
+}
+
+.faq-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  cursor: grab;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #693c96;
+}
+
+.faq-btn {
+  background-color: #9a57b37b;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.faq-btn:hover {
+  background-color: #7f3c96da;
+  transform: translateY(-2px);
+}
+
+.faq-txt {
+  display: none;
+  margin-top: 0.5rem;
+  font-family: 'Nunito', sans-serif;
+  font-size: 1rem;
+  color: #4e2c66;
+  line-height: 1.6;
+}
+
+.faq-txt.visible {
+  display: block;
+}
+
+
+
+
+/* Footer css */
 footer {
     background-color: #d298f3ce  ;
     color: #fff;
@@ -99,43 +168,6 @@ footer {
     padding: 1rem;
     font-size: 1rem;
   }
-  #partners-banner {
-    background: linear-gradient(135deg, #e2c8f7, #c9a3f5);
-    padding: 20px;
-    text-align: center;
-    border-radius: 10px;
-    margin: 20px auto;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-#partners-banner h3 {
-    font-family: 'Orbitron', cursive;
-    color: #6a1b9a;
-    font-size: 2rem;
-    margin-bottom: 15px;
-    background-color: none;
-}
-
-.partners-logos {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-}
-
-.partners-logos img {
-    width: 100px;
-    height: auto;
-    border-radius: 10px;
-    padding: 10px;
-    transition: transform 0.3s, opacity 0.3s;
-}
-
-.partners-logos img:hover {
-    transform: scale(1.2);
-    opacity: 0.8;
-}
-
   
   /* Responsive Design */
   @media (min-width: 768px) {
