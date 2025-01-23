@@ -1,12 +1,16 @@
-body,
-html {
+body, html {
   margin: 0;
   padding: 0;
-  font-family: 'Poppins', sans-serif; /* Police plus moderne */
+  font-family: 'Poppins', sans-serif;
   line-height: 1.6;
-  background-image: url('../img/jobpage.jpg');
-  background-size: fit-content;
+}
 
+#page-job{
+  background-image: url('../img/FAQ.jpg');
+  background-size: cover; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 /* Header Styles */
