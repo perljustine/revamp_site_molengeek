@@ -4,9 +4,13 @@ html {
   padding: 0;
   font-family: 'Poppins', sans-serif; 
   line-height: 1.6;
-  background-image: url('../img/background3.jpg');
+  background-image: url('../img/White.jpg');
   background-size: fit-content;
-
+}
+.michroma-regular {
+  font-family: "Michroma", serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 /* Header Styles */
@@ -152,7 +156,7 @@ nav ul li:hover {
   width: 100%;
   height: 600px;
   overflow: hidden;
-  border-radius: 10px;
+
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   margin-top: 10px; 
 }
@@ -200,17 +204,42 @@ nav ul li:hover {
 .carousel-nav.next {
   right: 10px;
 }
+.middle{
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+  background-color: none;
+  
+}
 
 /* Other Sections */
-#presentation,
-#coworking,
 #contact {
   background-color: #bb7ee745;
-  padding: 2rem;
+  padding: 5rem;
+  margin-top: 50px;
   backdrop-filter: blur(10px) saturate(120%);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+#coworking,
+#presentation {
+  background-color: #bb7ee745;
+  padding: 5rem;
+  border-radius: 50%;
+  margin: 10px;
+  backdrop-filter: blur(5px) saturate(90%);
+  box-shadow: 0 2px 4px rgba(216, 57, 57, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+#coworking p,
+#presentation p{
+  color: #542d73; 
+  font-size: 1rem;
+  text-align: center;
+  line-height: 1.5;
+  transition: color 0.3s ease;
+}
+
 
 #presentation:hover,
 #coworking:hover,
@@ -230,7 +259,7 @@ nav ul li:hover {
 
 iframe {
   width: 50%;
-  height: 80vh;
+  height: 88vh;
 }
 
 
@@ -269,10 +298,20 @@ iframe {
   background-color: #e2c9f379;
   border: #8964a4 1 solid;
   box-shadow:rgba(217, 202, 228, 0.789);
-  border-radius: 5px;
-  line-height: 0.9rem;
-  padding: 2px;
+  border-radius: 45px;
+  line-height: 0.5rem;
+  padding: 15px;
   color: white;
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+.contact-molengeek p {
+  line-height: 1rem;
+}
+.contact-molengeek p:hover{
+  color:#8964a4cb;
 }
 
 .name input, .email input, .subject input{
@@ -352,7 +391,7 @@ footer {
     display: none;
   }
 }
-@media (min-width: 320px) and (max-width: 767px){
+@media (min-width: 320px) and (max-width: 834px){
   #contact-infos{
     flex-direction: column;
     align-items: center;
@@ -360,11 +399,50 @@ footer {
     
 
   }
+  .middle{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+}
+    @media (min-width: 320px) and (max-width: 835px) {
+      #coworking,
+      #presentation {
+        background-color: #bb7ee745;
+        padding: 2rem; 
+        border-radius: 20px;  
+        margin: 10px;
+        height: auto;  
+        margin-bottom: 20px;
+        backdrop-filter: blur(5px) saturate(90%);
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+    
+      #coworking p,
+      #presentation p {
+        color: #542d73; 
+        font-size: 0.9rem;  /* Légère augmentation */
+        text-align: center;
+        line-height: 1.4;
+      }
+    
+      #coworking h1,
+      #presentation h1,
+      #coworking h2,
+      #presentation h2 {
+        font-size: 1rem;  /* Taille plus lisible */
+        text-align: center;
+        padding: 0.8rem;  /* Padding réduit */
+      }
+    
+    
+
   #contact-details{
     width: 100%;
     margin-bottom: 0;
     animation: none;
-    padding:  5%;
+    padding:  3%;
    
     justify-items: center;
   }
@@ -373,8 +451,9 @@ footer {
   }
   .contactForm input{
     font-size: 0.8rem;
-    
+   
   }
+
   iframe {
     width: 100%;
   }
