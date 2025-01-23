@@ -15,26 +15,139 @@
 </head>
 <body>
     <header>
-        <header>
-            <nav>
-                <p style="font-weight: 900; font-size: 1.5rem; letter-spacing: 0.5rem; color: rgb(199, 184, 212)">
-                    <a href="../../index.html" style="color: inherit; text-decoration: none;">
-                        MOLEN<span style="color:#df94e3c8">GEEK</span>
-                    </a>
+        <nav>
+            <p style="font-weight: 900; font-size: 1.5rem; letter-spacing: 0.5rem; color: rgb(199, 184, 212)">
+                <a href="../../index.html" style="color: inherit; text-decoration: none;">
+                    MOLEN<span style="color:#df94e3c8">GEEK</span>
+                </a>
+            </p>
+                            <ul>
+                <li><a href="../../index.html">Accueil</a></li>
+                <li><a href="./formations.html">Formations</a></li>
+                <li><a href="./jobs_faq.html">Jobs & FAQ</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+    <section id="formations-molengeek">
+        <div id="formations-longues">
+            <div class="formation-coding">
+                <h2>Formation Coding School</h2>
+                <p>
+                    Cette formation immersive et intensive, d’une durée de 3 à 6 mois, est conçue pour transformer des novices en véritables professionnels du code.
+                     Vous apprendrez à maîtriser les langages essentiels comme HTML, CSS, JavaScript et bien d’autres,
+                     tout en construisant des projets concrets pour constituer un portfolio impressionnant. 
+                     L’accent est mis sur l’apprentissage par la pratique et la résolution de problèmes réels, ce qui garantit une employabilité immédiate dans un secteur en constante évolution.
                 </p>
-                                <ul>
-                    <li><a href="../../index.html">Accueil</a></li>
-                    <li><a href="./formations.html">Formations</a></li>
-                    <li><a href="./jobs_faq.html">Jobs & FAQ</a></li>
-                </ul>
-                <div class="burger">
-                    <div class="line1"></div>
-                    <div class="line2"></div>
-                    <div class="line3"></div>
-                </div>
-            </nav>
-        </header>
-
+                <iframe class="youtube-video" width="560" height="315" src="https://www.youtube.com/embed/CG5-uf9n3aA&ab_channel=MolenGeek" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="formation-marketing">
+                <h2>Formation Marketing</h2>
+                <p>
+                    Destinée à ceux qui veulent devenir des experts du numérique, cette formation de 3 à 6 mois offre une immersion complète dans le monde du marketing digital.
+                    Vous découvrirez les secrets des campagnes sur les réseaux sociaux, du référencement SEO/SEA, des outils Google et bien plus encore.
+                     L’objectif est de vous donner les compétences nécessaires pour bâtir et optimiser des stratégies digitales performantes, adaptées aux besoins des entreprises modernes. 
+                     Grâce à des projets pratiques et des cas concrets, vous serez prêt(e) à briller dans ce secteur en pleine croissance.
+                </p>
+                <iframe class="youtube-video" width="560" height="315" src="https://www.youtube.com/embed/=Gno5C4WhnI4&ab_channel=MolenGeek" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+        <div id="formations-courtes">
+            <h2>Formations courtes</h2>
+            <ul class="formations-liste">
+                <li class="formation-item">
+                    <div class="formation-header">
+                        <span>Pack Web (12 jours)</span>
+                        <button class="toggle-details">+</button>
+                    </div>
+                    <div class="formation-details">
+                        <p>
+                            Apprenez les bases indispensables pour créer un site web fonctionnel et esthétique. Du codage avec HTML/CSS à l’ajout d’interactivité via JavaScript, vous terminerez en apprenant à configurer un site WordPress complet. En seulement 12 jours, vous serez capable de donner vie à vos idées en ligne !
+                        </p>
+                    </div>
+                </li>
+                <li class="formation-item">
+                    <div class="formation-header">
+                        <span>Pack Entrepreneur (10 jours)</span>
+                        <button class="toggle-details">+</button>
+                    </div>
+                    <div class="formation-details">
+                        <p>
+                            Vous avez un projet ou souhaitez lancer votre entreprise ? Ce pack est fait pour vous. Apprenez à utiliser des outils clés comme Google Ads et Google Analytics, maîtrisez WordPress pour créer un site professionnel et découvrez comment utiliser efficacement les réseaux sociaux pour promouvoir votre activité.
+                        </p>
+                    </div>
+                </li>
+                <li class="formation-item">
+                    <div class="formation-header">
+                        <span>Pack E-commerce (10 jours)</span>
+                        <button class="toggle-details">+</button>
+                    </div>
+                    <div class="formation-details">
+                        <p>
+                            Avec ce pack, vous apprendrez à créer votre boutique en ligne sur Shopify, à analyser les performances grâce à Google Analytics et à attirer vos clients grâce à des campagnes publicitaires ciblées sur les réseaux sociaux et Google Ads.
+                        </p>
+                    </div>
+                </li>
+            </ul>
+        </div> 
+    </section>
+    <section id="temoignages">
+        <div class="coding-temoignages">
+            <h2> Formation Coding </h2>
+            <div class="img-temoignage">
+                <img src="../img/samir.jpg" alt="photo">
+            </div>
+            <div class="coding-txt">
+                <p>
+                    "Avant de commencer la formation Coding School chez MolenGeek, je ne savais même pas ce qu'était une balise HTML. 
+                    En seulement quelques mois, j'ai non seulement appris à coder des sites web complets, mais j'ai aussi acquis une méthodologie de travail qui me sert au quotidien. 
+                    Les projets pratiques m'ont permis de bâtir un portfolio solide, et grâce au réseau de MolenGeek, j'ai décroché un stage dans une start-up tech dès la fin de ma formation.
+                     Une expérience qui a changé ma vie !"
+                </p>
+                <p>
+                    — Samir, 28 ans, développeur web junior 
+                </p>
+            </div>
+        </div>
+        <div class="marketing-temoignages">
+            <h2> Formation Marketing </h2>
+            <div class="img-temoignage">
+                <img src="../img/camille.jpg" alt="photo">
+            </div>
+            <div class="marketing-txt">
+                <p>
+                    "Je voulais me reconvertir dans le digital, mais je ne savais pas par où commencer. La formation Marketing Digital de MolenGeek m'a donné toutes les clés pour réussir : 
+                    des campagnes sur les réseaux sociaux au référencement SEO, en passant par la gestion des outils Google. Le plus incroyable, c'est la mise en pratique constante : 
+                    j'ai travaillé sur des cas concrets qui m'ont donné confiance en mes compétences. Aujourd'hui, je gère les stratégies digitales pour une PME, et c'est grâce à cette formation !"   
+                </p>
+                <p>
+                    — Camille, 32 ans, responsable marketing digital
+                </p>
+            </div>
+        </div>
+        <div class="formation-temoignages">
+            <h2> Formations Courtes </h2>
+            <div class="img-temoignage">
+                <img src="../img/leila.jpg" alt="photo">
+            </div>
+            <div class="formation-txt">
+                <p>
+                    "J'avais toujours rêvé de créer mon propre site web, mais je pensais que c'était trop compliqué. 
+                    En 12 jours avec le Pack Web de MolenGeek, j'ai appris à coder en HTML, styliser avec CSS et ajouter des animations avec JavaScript. 
+                    J'ai même découvert WordPress pour simplifier mes projets ! Maintenant, j'ai un site opérationnel et j'aide même mes amis à construire les leurs. 
+                    Cette formation a boosté ma confiance et m'a ouvert des portes que je n'imaginais pas."  
+                </p>
+                <p>
+                    — Leïla, 24 ans, créatrice de contenu freelance
+                </p>
+            </div>
+        </div>
+        
+    </section>
     
     <footer>
         <p>© 2025 MolenGeek. Tous droits réservés.</p>
