@@ -90,7 +90,16 @@ nav ul li a:hover {
   margin: 5px;
   transition: all 0.3s ease;
 }
-/* Footer Styles */
+.formation-details {
+  display: none;
+}
+
+.formation-details.visible {
+  display: block;
+}
+
+
+/* Styles */
 footer {
     background-color: #d298f3ce  ;
     color: #fff;
