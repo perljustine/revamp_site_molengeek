@@ -102,32 +102,38 @@ nav ul li a:hover {
 
 
 }
-#formations-molengeek{
+#formations-molengeek {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  text-align: center;
-  margin-bottom: 50px;
-  gap: 2rem;
-  width: 90%;
- 
+  align-items: center; 
+  justify-content: center;
+  margin:80px auto;
+  margin-top: 100px;
+  width: 90%; 
+  max-width: 1000px;
+  padding: 0 15px; 
 }
 
 
 .youtube-video {
   width: 60%;
-  height: 355px;
+  height: auto;
   margin-bottom: 50px;
 }
 .formation-coding,
 .formation-marketing,
 .formations-courtes {
-  flex-direction: row;
-  align-items: center;
-  text-align: center;
-  margin-bottom: 50px;
+  display: flex; 
+  flex-direction: row; 
+  justify-content: center; 
+  align-items: center; 
+  text-align: center; 
+  gap: 3rem;
+  margin-bottom: 70px; 
+  margin-top: 50px; 
 
 }
+
 
 .formation-item {
   display: flex;
@@ -186,7 +192,21 @@ nav ul li a:hover {
 .formation-details.visible {
   display: block;
 }
+#formations-courtes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
 
+.formations-liste {
+  width: 90%; 
+  max-width: 600px; /* Ajustez selon vos besoins */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem;
+}
 #temoignages{
   display: flex;
   justify-content: center;
@@ -194,10 +214,11 @@ nav ul li a:hover {
   align-items: center;
   align-content: center;
   margin-top: 100px;
-  padding: 15rem;
+  padding: 5rem;
   padding-top:2rem;
   padding-bottom:2rem;
   gap: 2rem;
+
 }
 #temoignages img {
   max-width: 100%; /* Évite que les images dépassent leur conteneur */
@@ -208,7 +229,7 @@ nav ul li a:hover {
 
 #temoignages p {
   width: auto; /* Adapte la largeur des paragraphes à leur contenu */
-  text-align: center; /* Centre le texte à l'intérieur du paragraphe */
+  text-align: center; 
 }
 
 .coding-temoignages,
@@ -216,11 +237,23 @@ nav ul li a:hover {
 .formation-temoignages {
   display: flex;
   flex-direction: row;
-  justify-content: center; /* Centre le contenu horizontalement */
-  align-items: center; /* Centre le contenu verticalement */
-  gap: 1rem; /* Ajoute un espace entre les éléments, si nécessaire */
-  width: 100%; /* Assure que le conteneur utilise toute la largeur */
+  justify-content: center; 
+  align-items: center; 
+  gap: 1rem;
+  width: 90%;
+  margin-bottom:50px;
+  max-width: 800px;
+  background-color: #bb7ee745;
+  padding: 3rem;
+  backdrop-filter: blur(10px) saturate(150%);
 }
+#formations-molengeek h1,
+#formations-molengeek h2,
+#temoignages h1,
+#temoignages h2 {
+  text-align: center; /* Centre uniquement les titres dans ces sections */
+}
+
 
 /* Styles */
 footer {
@@ -253,6 +286,49 @@ footer {
     }
   }
   
+  @media (min-width: 320px) and (max-width: 824px) {
+    #temoignages {
+      padding: 2rem 15px;
+      margin-top: 50px; 
+    }
+  
+    .coding-temoignages,
+    .marketing-temoignages,
+    .formation-temoignages {
+      flex-direction: column; 
+      gap: 1rem; 
+      text-align: center; 
+    }
+    .formation-coding,
+.formation-marketing,
+.formations-courtes {
+  display: flex; /* Garde la disposition flexible */
+  flex-direction: column; /* Change la disposition pour être verticale */
+  justify-content: center; /* Centre les éléments horizontalement */
+  align-items: center; /* Centre les éléments verticalement */
+  text-align: center; /* Centre le texte dans les éléments enfants */
+  gap: 1.5rem; /* Ajoute de l'espacement entre les éléments */
+  margin-bottom: 50px; /* Ajoute de l'espace en bas de chaque section */
+}
+
+  
+    .img-temoignage img {
+      width: 40%;
+      border-radius: 50%;
+      margin-bottom: 10px;
+      margin-top: 5px;
+    }
+
+  
+    #temoignages h2 {
+      font-size: 1.5rem; 
+      margin-bottom: 2rem;
+    }
+  
+    #temoignages p {
+      font-size: 0.9rem;
+    }
+  }
     
   
   
