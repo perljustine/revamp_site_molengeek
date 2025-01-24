@@ -5,84 +5,8 @@ body,html {
   line-height: 1.6;
 }
 
-/* Header Styles */
-header {
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  position: relative;
-  z-index: 1;
-  top: 0;
-}
+/*Section faq*/
 
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-}
-
-nav p {
-  margin-left: 1.5rem;
-  transition: transform 0.3s ease;
-}
-
-nav p:hover {
-  transform: scale(1.1);
-}
-
-nav ul {
-  display: none;
-  list-style-type: none;
-  margin-right: 1.5rem;
-  padding: 0;
-
-}
-
-nav ul.show {
-  display: flex;
-  flex-direction: row;
-  position: absolute;
-  top: 110%;
-  left: 3%;
-  width: 95%;
-  background-color: #df94e33f;
-  box-shadow: 0 2px 4px rgba(141, 80, 173, 0.695);
-  text-shadow: 0 2px 4px rgba(141, 80, 173, 0.695);
-  border-radius: 30px;
-}
-
-nav ul li {
-  margin: 1rem;
-  line-height: 0.8rem;
-}
-
-nav ul.show:hover {
-  background-color: #a70baf3f;
-}
-
-nav ul li a {
-  text-decoration: none;
-  color: #8964a4; /* Couleur mauve jeune */
-  font-weight: bold;
-  font-size: 1.1rem;
-  transition: color 0.3s ease;
-}
-
-nav ul li a:hover {
-  color: #9b30ff; /* Mauve plus intense */
-}
-
-.burger {
-  display: block;
-  cursor: pointer;
-}
-
-.burger div {
-  width: 25px;
-  height: 3px;
-  background-color: #6a0dad; /* Mauve pour le burger */
-  margin: 5px;
-  transition: all 0.3s ease;
-}
 
 #faq {
   max-width: 800px;
@@ -90,7 +14,7 @@ nav ul li a:hover {
   padding: 1rem;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
+} /*valeur de la section et style*/
 
 
  h2 {
