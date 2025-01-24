@@ -1,3 +1,4 @@
+/*Css page d'acceuil*/
 body,
 html {
   margin: 0;
@@ -13,6 +14,7 @@ html {
   font-style: normal;
 } /* Police téléchargée pour le site */
 
+/*Barre de navigation*/
 
 header {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -30,7 +32,7 @@ nav {
 }
 
 nav p {
-  margin-left: 1.5rem;
+  margin-left: 1.5rem; /*logo Molengeek*/
   transition: transform 0.3s ease;
 }
 
@@ -38,7 +40,7 @@ nav p:hover {
   transform: scale(1.1);
 } /* transition en passant sur le "logo" molengeek qui s'agrandit */
 
-nav ul {
+nav ul { /*en display none pour être activé qu'en cas de click*/
   display: none;
   list-style-type: none;
   margin-right: 1.5rem;
@@ -46,7 +48,7 @@ nav ul {
 
 }
 
-nav ul.show {
+nav ul.show { /*texte menu barre burger*/
   display: flex;
   flex-direction: row;
   position: absolute;  /* quand à l'aide de la fonction js on appuye sur la classlist show sa position est 
@@ -60,16 +62,16 @@ nav ul.show {
   border-radius: 30px;
 }
 
-nav ul li {
+nav ul li {  /*espacement point de la liste*/
   margin: 1rem;
   line-height: 0.8rem;
 }
 
-nav ul.show:hover {
+nav ul.show:hover { 
   background-color: #a70baf3f;
 }
 
-nav ul li a {
+nav ul li a { /* style texte navbar*/
   text-decoration: none;
   color: #664b79; 
   font-weight: bold;
@@ -100,14 +102,14 @@ nav ul li a:hover {
 }
 @keyframes rotate {
   0% {
-    transform: rotate(0deg);
+    transform: rotate(0deg); /* à 0% est sur 0deg*/
   }
   100% {
-    transform: rotate(360deg);
+    transform: rotate(360deg); /* à 360% est sur 360deg*/
   }
 }
 
-
+/*style sections pour homogeiniser la page*/
 
 section {
   margin-bottom: 4rem;
@@ -115,7 +117,7 @@ section {
 }
 
 section:hover {
-  transform: translateY(-5px);
+  transform: translateY(-5px); /*trnasform subit -5 surl'axe Y donc l'axe vertical*/
 }
 
 h1,
@@ -139,10 +141,10 @@ animation: big 0.4s ease-in-out;
 }
 @keyframes big {
   0% {
-    transform: scale(1);
+    transform: scale(1); /*normal a 0%*/
   }
   50% {
-    transform: scale(1.1);
+    transform: scale(1.1); /*0.1 plus grand à 50%*/
   }
   100% {
     transform: scale(1);
@@ -190,7 +192,7 @@ animation: big 0.4s ease-in-out;
 }
 
 .carousel-nav:hover {
-  background-color: rgba(106, 13, 173, 1); 
+  background-color: rgba(106, 13, 173, 1);  /*passer sur les boutons de la nav en mauve*/
 }
 
 .carousel-nav.prev {
@@ -208,15 +210,9 @@ animation: big 0.4s ease-in-out;
   
 }
 
+/*style général sction par section*/
 
-#contact {
-  background-color: #bb7ee745;
-  padding: 5rem;
-  margin-top: 50px;
-  backdrop-filter: blur(10px) saturate(120%);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
+
 
 #coworking,
 #presentation {
@@ -245,6 +241,17 @@ animation: big 0.4s ease-in-out;
  {
   transform: translateY(-5px);
   box-shadow: 0 6px 8px rgba(110, 24, 152, 0.15);
+}
+
+/*section contact*/
+
+#contact {
+  background-color: #bb7ee745;
+  padding: 5rem;
+  margin-top: 50px;
+  backdrop-filter: blur(10px) saturate(120%);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 #contact-infos{
