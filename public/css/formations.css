@@ -156,16 +156,18 @@ transition: transform 0.3s ease;
 /*Style témoignages*/
 #temoignages{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  margin-top: 200px; 
+  margin-top: 100px; 
+  gap:3rem;
+  width:90%;
+  margin:0 auto;
 }
 
 #temoignages img {
   max-width: 100%; /* Évite que les images dépassent leur conteneur */
-  height: auto; /*toijours mieux de mettre height auto pour des img pour qu'elles s'adaptend a leur container*/
+  height: 100px; /*toijours mieux de mettre height auto pour des img pour qu'elles s'adaptend a leur container*/
   border-radius: 50%;
-  margin-bottom: 20px;
 }
 
 #temoignages p {
@@ -178,15 +180,14 @@ transition: transform 0.3s ease;
 .marketing-temoignages, /*style de chaque témoignages*/
 .formation-temoignages {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center; 
   width: 90%;
-  height: auto;
-  margin-bottom:50px;
+  height: 600px;
   max-width: 800px;
   background-color: #bb7ee745;
   padding: 3rem;
-  gap:3rem;
+  gap:1rem;
   backdrop-filter: blur(10px) saturate(150%); /* blur le fond*/
   transition: 0.4s ease-in-out;
 }
@@ -204,6 +205,7 @@ transition: transform 0.3s ease;
 #temoignages h2 {
   text-align: center; /* Centre uniquement les titres dans ces sections */
 }
+
 
 
 /* Styles */
@@ -267,33 +269,40 @@ footer {
   
 
      /*mise en forme section temoignages */
+  /* Section témoignages */
+  #temoignages {
+    flex-direction: column; /* Aligne les témoignages verticalement */
+    margin: 30px auto;
+    width: 100%; /* Assure qu'il ne dépasse pas la largeur de l'écran */
+  }
+
   .coding-temoignages,
   .marketing-temoignages,
   .formation-temoignages {
-    flex-direction: column; /*change le sens de la section pour adapter a écran*/
+    flex-direction: column; /* Place le contenu verticalement */
+    width: 60%; /* Limite la largeur pour qu'elle reste bien dans l'écran */
     gap: 1rem; 
-    text-align: center; 
+    margin: 20px auto; /* Centre la section */
+    text-align: center; /* Centre le texte */
+    height: 750px;
   }
 
-  #temoignages {
-  padding: 2rem 15px;
-  margin-top: 50px; 
-  }
-  .img-temoignage img {
-    width: 60%;
+  #temoignages img {
+    width: 80%; /* Réduit la taille des images pour s'adapter */
     border-radius: 50%;
-  } /*modif taille img*/
+    margin: 0 auto; /* Centre les images */
+  }
 
-  #temoignages{
-    margin: 50px auto;
-    padding: 0;
-    width:80%;
+  #temoignages p {
+    width: 100%; /* Adapte les paragraphes à la largeur disponible */
+    font-size: 1rem; /* Ajuste la taille de police pour les petits écrans */
   }
 
   #temoignages h2 {
-    font-size: 1.5rem; 
-    margin-bottom: 2rem;
+    font-size: 1.4rem; /* Diminue légèrement la taille des titres */
+    margin-bottom: 1.5rem;
   }
+
 }
 
   
