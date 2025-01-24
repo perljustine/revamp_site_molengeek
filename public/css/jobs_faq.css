@@ -7,7 +7,66 @@ body, html {
   background-color: #f8f3fa;
 }
 
+/*css jobs*/
 
+.job-titre{
+  margin-top: 100px;
+}
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.job-container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+.job-item {
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 1rem;
+  background-color: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.job-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  cursor: pointer;
+  background-color: #f8f3fa;
+}
+
+.job-description {
+  display: none;
+  padding: 1rem;
+  background-color: #ffffff;
+  transform: translateY(0);
+  transition: transform 0.3s ease;
+}
+
+.job-description.open {
+  display: block;
+}
+
+.toggle-icon {
+  background-color: #df94e3;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+}
+
+.toggle-icon.active {
+  transform: rotate(45deg);
+}
 
 /*css faq*/
 #faq {
