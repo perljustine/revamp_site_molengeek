@@ -1,34 +1,26 @@
-body,html {
+body, html {
   margin: 0;
   padding: 0;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Nunito', sans-serif;
   line-height: 1.6;
+  color: #4e2c66;
+  background-color: #f8f3fa;
 }
 
-/*Section faq*/
 
 
+/*css faq*/
 #faq {
   max-width: 800px;
   margin: 2rem auto;
   padding: 1rem;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-} /*valeur de la section et style*/
-
-
- h2 {
-  text-align: center;
-  font-family: 'Orbitron', sans-serif;
-  color: #8f40ab;
-  font-size: 2.5rem;
-  margin-bottom: 2rem;
-  margin-top: 3rem;
 }
+
+
 
 .faq-liste {
   list-style: none;
-  /* padding: 1rem; */
+  padding: 0;
 }
 
 .faq-item {
@@ -37,84 +29,78 @@ body,html {
   transition: background-color 0.3s ease-in-out;
 }
 
-
-
 .faq-item:hover {
-  background-color: #efe8f7;
+  background-color: #f8f3fa;
 }
 
 .faq-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  text-align: center;
-  cursor: grab;
-  font-family: 'Orbitron', sans-serif;
+  cursor: pointer;
+  font-family: "Orbitron", sans-serif;
   font-size: 0.9rem;
   font-weight: bold;
-  color: #693c96;
+  color: #8f40ab;
 }
 
 .faq-btn {
-  background-color: #9a57b37b;
+  background-color: #df94e3;
   border: none;
   border-radius: 20px;
   cursor: pointer;
   transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
 }
 
 .faq-btn:hover {
-  background-color: #7f3c96da;
+  background-color: #8f40ab;
   transform: translateY(-2px);
 }
 
 .faq-txt {
   display: none;
   margin-top: 0.5rem;
-  font-family: 'Nunito', sans-serif;
   font-size: 1rem;
   color: #4e2c66;
-  line-height: 1.6;
 }
 
 .faq-txt.visible {
   display: block;
 }
 
-
-
-
 /* Footer css */
 footer {
-    background-color: #d298f3ce  ;
-    color: #fff;
-    text-align: center;
-    padding: 1rem;
-    font-size: 1rem;
-  }
-  
-  /* Responsive Design */
-  @media (min-width: 768px) {
-    nav ul {
-      display: flex;
-    }
-  
-    nav ul.show {
-      position: static;
-      flex-direction: row;
-      background-color: transparent;
-      box-shadow: none;
-    }
-  
-    nav ul li {
-      margin: 0 1rem;
-    }
-  
-    .burger {
-      display: none;
-    }
+  background-color: #d298f3ce;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  font-size: 1rem;
 }
-  
-    
-  
-  
+
+/* Responsive Design */
+@media (min-width: 768px) {
+  nav ul {
+    display: flex;
+  }
+
+  nav ul.show {
+    position: static;
+    flex-direction: row;
+    background-color: transparent;
+    box-shadow: none;
+  }
+
+  nav ul li {
+    margin: 0 1rem;
+  }
+
+  .burger {
+    display: none;
+  }
+}
