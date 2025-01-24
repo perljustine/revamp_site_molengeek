@@ -5,124 +5,26 @@ body, html {
   line-height: 1.6;
  
 }
-#page-formation{
-  background-image: url('../img/job2.jpg');
-  background-size: cover; 
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-}
-/* Header Styles */
-header {
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  position: relative;
-  z-index: 1;
-  top: 0;
-}
 
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+/*style général des sections*/
 
-}
-
-nav p {
-  margin-left: 1.5rem;
-  transition: transform 0.3s ease;
-}
-
-nav p:hover {
-  transform: scale(1.1);
-}
-
-nav ul {
-  display: none;
-  list-style-type: none;
-  margin-right: 1.5rem;
-  padding: 0;
-
-}
-
-nav ul.show {
-  display: flex;
-  flex-direction: row;
-  position: absolute;
-  top: 110%;
-  left: 3%;
-  width: 95%;
-  background-color: #df94e33f;
-  box-shadow: 0 2px 4px rgba(141, 80, 173, 0.695);
-  text-shadow: 0 2px 4px rgba(141, 80, 173, 0.695);
-  border-radius: 30px;
-}
-
-nav ul li {
-  margin: 1rem;
-  line-height: 0.8rem;
-}
-
-nav ul.show:hover {
-  background-color: #a70baf3f;
-}
-
-nav ul li a {
-  text-decoration: none;
-  color: #8964a4; /* Couleur mauve jeune */
-  font-weight: bold;
-  font-size: 1.1rem;
-  transition: color 0.3s ease;
-}
-
-nav ul li a:hover {
-  color: #9b30ff; /* Mauve plus intense */
-}
-
-.burger {
-  display: block;
-  cursor: pointer;
-}
-
-.burger div {
-  width: 25px;
-  height: 3px;
-  background-color: #6a0dad; /* Mauve pour le burger */
-  margin: 5px;
-  transition: all 0.3s ease;
-}
-
-#formations-molengeek,
-#temoignages {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  margin-top: 100px;
-  padding: 2rem;
-
-
-}
 #formations-molengeek {
   display: flex;
   flex-direction: column;
   align-items: center; 
-  justify-content: center;
-  margin:80px auto;
+  margin:80px auto;  /*le margin auto permet de bien centré l'élément dans son parent*/
   margin-top: 100px;
-  width: 90%; 
-  max-width: 1000px;
-  padding: 0 15px; 
+  max-width: 1000px; /*permet à la section de ne pas dépasser de valeur maximale*/
 }
 
 
-.youtube-video {
+.youtube-video { /*valeurs de la vidéo youtube*/
   width: 50%;
   height: 280px;
   margin-bottom: 30px;
   border: #8964a48a 5px solid;
   border-radius: 50px;
   margin-top: 30px;
-  transform: shake 0.1s infinite ease-in-out;
 }
 
 @keyframes shake {
@@ -133,53 +35,61 @@ nav ul li a:hover {
   80% { transform: translateX(10px); }
 }
 .youtube-video:hover {
-  animation: shake 0.5s ease;
+  animation: shake 0.5s ease; /*conditions de l'animation*/
 }
 
-.formation-coding,
+
+.formation-coding, /*style de la section formation*/
 .formation-marketing,
 .formations-courtes {
   display: flex; 
   flex-direction: row; 
-  justify-content: center; 
   align-items: center; 
-  align-content: center;
-  text-align: center; 
   gap: 3rem;
-  margin-bottom: 50px; 
-  margin-top: 50px; 
+  margin-bottom: 90px; 
+  color:#6b696e;
   background-color: #bb7ee745;
   padding: 3rem;
   backdrop-filter: blur(10px) saturate(150%);
   border-radius: 30px;
   transition: transform 0.3s ease; 
-
-
 }
 
 
-.formation-coding:hover,
+.formation-coding:hover, /* transform vers le bas*/
 .formation-marketing:hover,
 .formations-courtes:hover {
-  transform: translateY(-5px);
+  transform: translateY(5px);
 }
+
 .formation-coding p,
 .formation-marketing p{
 width: 50%;
+transition: transform 0.3s ease; 
+}
 
+.formation-coding p:hover,
+.formation-marketing p:hover,
+.formations-courtes p:hover {
+  transform: translateY(-5px); /*transform vers le haut*/
 }
 
 .formation-item {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  width: 100%; /* Élargit chaque élément à la largeur complète de son conteneur */
+  align-content: center;
+  width: 150%; /* Élargit chaque élément à la largeur complète de son conteneur */
   margin-bottom: 20px; /* Ajoute un espacement entre chaque formation */
   padding: 15px; /* Ajoute un peu d'espace interne pour une meilleure lisibilité */
-  border: 1px solid #df94e3; /* Bordure pour séparer visuellement les items */
   border-radius: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  background-color: #f9f6fc;
+  background-color: #f8def9d0;
+  transform: 0.4s ease-in-out; 
+
+}
+.formation-item:hover{
+  background: linear-gradient(#f5ebf6b6 0%, #deacf0b1 50%, #a266b1a5 100%); /* passe le fond plus foncé quand on est sur la section*/
 }
 
 .formation-header {
@@ -187,20 +97,21 @@ width: 50%;
   justify-content: space-between; /* Espace entre le texte et le bouton */
   align-items: center;
   width: 100%; /* La ligne prend toute la largeur */
-  margin-bottom: 10px; /* Espacement entre l'en-tête et les détails */
+  margin: 10px auto; /* Espacement entre l'en-tête et les détails */
 }
 
 .formation-header span {
   font-size: 1.2rem; /* Taille du texte pour plus de lisibilité */
   font-weight: bold;
-  color: #6a0dad;
+  color: #ac5fba;
+  text-shadow: 0 3px 5px #9e6aa18b;
 }
 
 .formation-header .toggle-details {
   font-size: 1.2rem; /* Augmente la taille du bouton */
   padding: 5px 15px; /* Espacement interne pour agrandir le bouton */
   border: none;
-  background-color: #df94e3;
+  background-color: #9e6aa1;
   color: white;
   border-radius: 5px;
   cursor: pointer;
@@ -208,7 +119,7 @@ width: 50%;
 }
 
 .formation-header .toggle-details:hover {
-  background-color: #9b30ff; /* Couleur plus intense au survol */
+  background-color: #db8ef7; /* Couleur plus intense au survol */
   transform: scale(1.1); /* Légère augmentation de la taille au survol */
 }
 
@@ -216,71 +127,67 @@ width: 50%;
   padding: 10px 0;
   line-height: 1.6;
   font-size: 1rem;
-  color: #333; /* Couleur du texte */
-}
+  color:#6b696e;
+} 
 
-.formation-details {
+
+.formation-details { /* quand n'est pas en class 'visible' n'apparait pas*/
   display: none;
 }
 
-.formation-details.visible {
+.formation-details.visible { /*quand est en classe visible apparaît en display block*/
   display: block;
 }
+
 #formations-courtes {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  width: 100%; /*pour prendre la totalité de la section*/
 }
 
 .formations-liste {
-  width: 90%; 
-  max-width: 600px; /* Ajustez selon vos besoins */
+  width: 70%;  /*prend 70% de la section*/
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 3rem;
 }
+
+/*Style témoignages*/
 #temoignages{
   display: flex;
-  justify-content: center;
   flex-direction: column;
   align-items: center;
-  align-content: center;
-  margin-top: 100px;
-  padding: 5rem;
-  padding-top:2rem;
-  padding-bottom:2rem;
-  
+  margin-top: 200px; 
 }
 
 #temoignages img {
   max-width: 100%; /* Évite que les images dépassent leur conteneur */
-  height: auto;
-  border-radius: 50px;
+  height: auto; /*toijours mieux de mettre height auto pour des img pour qu'elles s'adaptend a leur container*/
+  border-radius: 50%;
   margin-bottom: 20px;
 }
 
 #temoignages p {
   width: auto; /* Adapte la largeur des paragraphes à leur contenu */
-  text-align: center; 
-
+  font-style: italic;
+  color:#6b696e;
 }
 
 .coding-temoignages,
-.marketing-temoignages,
+.marketing-temoignages, /*style de chaque témoignages*/
 .formation-temoignages {
   display: flex;
   flex-direction: row;
-  justify-content: center; 
   align-items: center; 
-  gap: 1rem;
   width: 90%;
+  height: auto;
   margin-bottom:50px;
   max-width: 800px;
   background-color: #bb7ee745;
   padding: 3rem;
-  backdrop-filter: blur(10px) saturate(150%);
+  gap:3rem;
+  backdrop-filter: blur(10px) saturate(150%); /* blur le fond*/
   transition: 0.4s ease-in-out;
 }
 
@@ -288,7 +195,7 @@ width: 50%;
 .marketing-temoignages:hover,
 .formation-temoignages:hover {
 
-  transform: scale(1.1);
+  transform: scale(1.1); /*agrandit la section quand on passe dessus*/
 }
 
 #formations-molengeek h1,
@@ -309,110 +216,86 @@ footer {
   }
   
   /* Responsive Design */
-  @media (min-width: 768px) {
-    nav ul {
-      display: flex;
-    }
   
-    nav ul.show {
-      position: static;
-      flex-direction: row;
-      background-color: transparent;
-      box-shadow: none;
-    }
-  
-    nav ul li {
-      margin: 0 1rem;
-    }
-  
-    .burger {
-      display: none;
-    }
-  }
-  
-  @media (min-width: 320px) and (max-width: 824px) {
-    #temoignages {
-      padding: 2rem 15px;
-      margin-top: 50px; 
-    }
-  
-    .coding-temoignages,
-    .marketing-temoignages,
-    .formation-temoignages {
-      flex-direction: column; 
-      gap: 1rem; 
-      text-align: center; 
-    }}
-
-    @media (max-width: 824px) {
-      #formations-molengeek {
-        width: 95%;
-        margin: 50px auto;
-        padding: 10px;
-      }
-    
-      .youtube-video {
-        width: 100%;
-        height: 200px;
-        margin: 20px 0;
-      } 
-    
-      .formation-coding,
-      .formation-marketing,
-      .formations-courtes {
-        flex-direction: column; /* changement de flex*/
-        padding: 1.5rem;
-        gap: 1rem;
-        margin-bottom: 20px;
-      }
-    
-      .formation-coding p,
-      .formation-marketing p {
-        width: 100%;
-        text-align: center;
-      }
-    
-      .formation-item {
-        width: 100%;
-        margin-bottom: 15px;
-        padding: 10px;
-      }
-    
-      .formation-header span {
-        font-size: 1rem;
-      }
-    
-      .formation-header .toggle-details {
-        font-size: 1rem;
-        padding: 3px 10px;
-      }
-    
-      .formations-liste {
-        width: 95%;
-        padding: 1.5rem;
-      }
-    
+@media (min-width: 320px) and (max-width: 824px) {
  
+  /* mise en page section formation*/
+  #formations-molengeek {
+    width: 95%;
+    margin: 50px auto;
+  } /*adapte la taille de la section a l'écran*/
+
+  .youtube-video {
+    width: 80%;
+    height: 200px;
+  } /*changement de la taille */
 
   
-    .img-temoignage img {
-      width: 40%;
-      border-radius: 50%;
-      margin-bottom: 10px;
-      margin-top: 5px;
-    }
-
-  
-    #temoignages h2 {
-      font-size: 1.5rem; 
-      margin-bottom: 2rem;
-    }
-  
-    #temoignages p {
-      font-size: 0.9rem;
-    }
+  .formation-coding,
+  .formation-marketing,
+  .formations-courtes {
+    flex-direction: column; /* changement de flex*/
+    padding: 1.5rem; /*diminue l'espace entre chaque*/
+    margin: 50px auto;
   }
-    
+
+  .formation-coding p,
+  .formation-marketing p {
+    width: 100%;
+    margin-bottom: 0;
+  }
+
+  .formation-item {
+    width: 100%;
+    margin-bottom: 5px;
+    padding: 10px;
+  }
+
+  .formation-header span {
+    font-size: 1rem;
+  }
+
+  .formation-header .toggle-details {
+    font-size: 1rem;
+    padding: 3px 10px;
+  }
+
+  .formations-liste {
+    width: 95%;
+    padding: 1.5rem;
+  }
   
+
+     /*mise en forme section temoignages */
+  .coding-temoignages,
+  .marketing-temoignages,
+  .formation-temoignages {
+    flex-direction: column; /*change le sens de la section pour adapter a écran*/
+    gap: 1rem; 
+    text-align: center; 
+  }
+
+  #temoignages {
+  padding: 2rem 15px;
+  margin-top: 50px; 
+  }
+  .img-temoignage img {
+    width: 60%;
+    border-radius: 50%;
+  } /*modif taille img*/
+
+  #temoignages{
+    margin: 50px auto;
+    padding: 0;
+    width:80%;
+  }
+
+  #temoignages h2 {
+    font-size: 1.5rem; 
+    margin-bottom: 2rem;
+  }
+}
+
   
-  
+
+

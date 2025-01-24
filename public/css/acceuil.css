@@ -56,9 +56,10 @@ nav ul.show { /*texte menu barre burger*/
   justify-content: space-around;
   left: 3%;
   width: 95%;
-  background-color: #de8fe297;
+  top: 90%;
+  background-color: #e89eec97;
   box-shadow: 0 2px 4px rgba(141, 80, 173, 0.695);
-  text-shadow: 0 2px 4px rgba(141, 80, 173, 0.695);
+  text-shadow: 0 2px 4px rgba(119, 106, 126, 0.695);
   border-radius: 30px;
 }
 
