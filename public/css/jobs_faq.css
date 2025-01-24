@@ -13,15 +13,15 @@ body, html {
   margin-top: 100px;
 }
 .container {
-  max-width: 800px;
+  max-width: 1000px;
   margin: 0 auto;
   padding: 1rem;
 }
 
 .job-container {
-  max-width: 800px;
+  max-width: 1000px;
   margin: 2rem auto;
-  padding: 1rem;
+  padding: 3rem;
 }
 
 .job-item {
@@ -29,7 +29,7 @@ body, html {
   margin-bottom: 1rem;
   background-color: #ffffff;
   border-radius: 10px;
-  overflow: hidden;
+  overflow: hidden; /*caché tant qu'il n'est pasactivé par la fonction*/
 }
 
 .job-header {
@@ -45,8 +45,7 @@ body, html {
   display: none;
   padding: 1rem;
   background-color: #ffffff;
-  transform: translateY(0);
-  transition: transform 0.3s ease;
+  transition: transform 0.4s ease;
 }
 
 .job-description.open {
@@ -65,7 +64,7 @@ body, html {
 }
 
 .toggle-icon.active {
-  transform: rotate(45deg);
+  transform: rotate(45deg); /*transformeen crois grâce au 45° quand on rotate*/
 }
 
 /*css faq*/
@@ -106,7 +105,7 @@ body, html {
 .faq-btn {
   background-color: #df94e3;
   border: none;
-  border-radius: 20px;
+  border-radius: 40%;
   cursor: pointer;
   transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
   width: 24px;

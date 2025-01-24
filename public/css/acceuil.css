@@ -130,6 +130,7 @@ h2 {
   text-shadow: 0 6px 8px rgba(231, 155, 249, 0.279);
   font-size: 1rem;
   margin: 0 auto;
+  margin-bottom: 30px;
   padding: 1.3rem;
   text-align: center;
   width: fit-content; /* permet dans les cas d'un background color de ne pas s'étendre sur toute la largeur et d'uniquement s'adapter au contenu*/
@@ -449,8 +450,7 @@ footer {
     gap: 1rem;
   } 
  
-}
-    @media (min-width: 320px) and (max-width: 834px) {
+
       #coworking,
       #presentation {
         padding: 2rem; 
