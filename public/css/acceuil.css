@@ -5,7 +5,7 @@ html {
   padding: 0;
   font-family: 'Poppins', sans-serif; 
   line-height: 1.6;
- background-image: url('../img/White.jpg');   /* background du site */
+ background-image: url('../img/studio.jpg');   /* background du site */
   background-size: fit-content;
 }
 .michroma-regular {
@@ -123,18 +123,18 @@ section:hover {
 
 h1,
 h2 {
-  background-color: #d6a7e379;
+  background-color: #f1d1fa79;
   border-radius: 40px;
   font-family: 'Orbitron';
-  color: #542d73; 
-  text-shadow: 0 6px 8px rgba(231, 155, 249, 0.279);
+  color: #8c52b9; 
+  text-shadow: 0 6px 8px rgba(247, 241, 248, 0.279);
   font-size: 1rem;
   margin: 0 auto;
   margin-bottom: 30px;
   padding: 1.3rem;
   text-align: center;
   width: fit-content; /* permet dans les cas d'un background color de ne pas s'étendre sur toute la largeur et d'uniquement s'adapter au contenu*/
-  box-shadow: 0 6px 8px rgba(231, 155, 249, 0.279);
+  box-shadow: 0 3px 4px rgba(231, 155, 249, 0.279);
 }
 h1:hover,
 h2:hover,
@@ -218,7 +218,7 @@ animation: big 0.4s ease-in-out;
 
 #coworking,
 #presentation {
-  background-color: #bb7ee745;
+  background-color: #be9bd745;
   padding: 5rem;
   border-radius: 50%;
   margin: 30px;
@@ -228,7 +228,7 @@ animation: big 0.4s ease-in-out;
 }
 #coworking p,
 #presentation p{
-  color: #542d73; 
+  color: #685e6d; 
   font-size: 1rem;
   text-align: center;
   line-height: 1.5;
