@@ -47,7 +47,7 @@ body, html {
   align-items: center; 
   gap: 3rem;
   margin-bottom: 90px; 
-  color:#6b696e;
+  color:#685e6d;
   background-color: #bb7ee745;
   padding: 3rem;
   backdrop-filter: blur(10px) saturate(150%);
@@ -89,7 +89,7 @@ transition: transform 0.3s ease;
 
 }
 .formation-item:hover{
-  background: linear-gradient(#f5ebf6b6 0%, #deacf0b1 50%, #a266b1a5 100%); /* passe le fond plus foncé quand on est sur la section*/
+  background: linear-gradient(#f5ebf6b6 0%, #e9cbf4b1 50%, #e5a4f6a5 100%); /* passe le fond plus foncé quand on est sur la section*/
 }
 
 .formation-header {
@@ -119,7 +119,7 @@ transition: transform 0.3s ease;
 }
 
 .formation-header .toggle-details:hover {
-  background-color: #db8ef7; /* Couleur plus intense au survol */
+  background-color: #e6b7f7; /* Couleur plus intense au survol */
   transform: scale(1.1); /* Légère augmentation de la taille au survol */
 }
 
@@ -127,7 +127,7 @@ transition: transform 0.3s ease;
   padding: 10px 0;
   line-height: 1.6;
   font-size: 1rem;
-  color:#6b696e;
+  color:#685e6d;
 } 
 
 
@@ -159,9 +159,6 @@ transition: transform 0.3s ease;
   flex-direction: row;
   align-items: center;
   margin-top: 100px; 
-  gap:3rem;
-  width:90%;
-  margin:0 auto;
 }
 
 #temoignages img {
@@ -173,7 +170,7 @@ transition: transform 0.3s ease;
 #temoignages p {
   width: auto; /* Adapte la largeur des paragraphes à leur contenu */
   font-style: italic;
-  color:#6b696e;
+  color:#685e6d;
 }
 
 .coding-temoignages,
