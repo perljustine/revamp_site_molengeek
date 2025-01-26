@@ -8,3 +8,5 @@ document.querySelectorAll('.job-item').forEach(jobItem => {
         toggleIcon.classList.toggle('active');
     });
 });
+
+// Meme chose que pour la nav bar
